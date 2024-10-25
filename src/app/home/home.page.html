@@ -4,13 +4,54 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
 <ion-card id="container">
   <ion-card-header id="header">
-    <h2>{{ welcomeMessage }}</h2>
+    <h2 style="color: white;">{{ welcomeMessage }}</h2>
   </ion-card-header>
   <ion-card-content>
-  
-  <ion-button expand="full" (click)="logout()">Cerrar Sesión</ion-button>
+  <div id="msginicial">
+    <h2 style="padding-bottom: 10px;"> Aplicación de registro de asistencia</h2>
+    <h2 style="padding-bottom: 10px;"> Usando código QR</h2>
+    <h2 style="padding-bottom: 10px;"> ¡Empieza Ya!</h2>
+  </div>
+  <div id="img">
+    <img src="../../assets/icon/codigo-qr.png" alt="">
+  </div>
+
   </ion-card-content>
 </ion-card>
+</ion-content>
+<ion-footer id="footer">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <div id="boton1">
+        <ion-button>
+          <ion-icon slot="start" name="home-outline"></ion-icon>
+          Inicio
+        </ion-button>
+      </div>
+      <ion-button>
+        <ion-icon slot="start" name="star"></ion-icon>
+        Asistencia
+      </ion-button>
+    </ion-buttons>
+    <h2 style="text-align: center;"></h2>
+    <ion-buttons slot="secondary" id="boton-centro">
+      <ion-button>
+        <ion-icon slot="start" name="star"></ion-icon>
+        Perfil
+      </ion-button>
+
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="start" name="star"></ion-icon>
+        Perfil
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
 
