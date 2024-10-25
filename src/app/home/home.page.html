@@ -4,8 +4,13 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <h2>{{ welcomeMessage }}</h2>
+<ion-card id="container">
+  <ion-card-header id="header">
+    <h2>{{ welcomeMessage }}</h2>
+  </ion-card-header>
+  <ion-card-content>
+  
   <ion-button expand="full" (click)="logout()">Cerrar Sesión</ion-button>
-</ion-content>
+  </ion-card-content>
+</ion-card>
 

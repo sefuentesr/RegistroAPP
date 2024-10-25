@@ -26,7 +26,22 @@ ion-content {
     color: #000000; 
     font-weight: bold;
   }
+
+  ion-avatar{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+  }
 }
+
+
+#barra1{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color:linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+  
+}
+
 
 
 body {
