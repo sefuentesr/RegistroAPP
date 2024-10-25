@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="currentUser">
+    <h2>Bienvenido, {{ currentUser }}!</h2>
+    <p>Aquí puedes ver tu información de perfil.</p>
+  </div>
+  <div *ngIf="!currentUser">
+    <p>No has iniciado sesión.</p>
+  </div>
+</ion-content>
+

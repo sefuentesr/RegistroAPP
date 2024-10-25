@@ -10,15 +10,23 @@ import { AuthService } from '../auth.service';
 export class LoginPage {
   username: string = '';
   password: string = '';
+  successMessage: string = '';
   errorMessage: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
 
   login() {
-    if (this.authService.login(this.username, this.password)) {
+    if (this.authService.registerUser(this.username, this.password)) {
+      this.errorMessage = '';
       this.router.navigate(['/home']); 
     } else {
-      this.errorMessage = 'Credenciales inválidas'; 
+      this.successMessage = '';
+      this.errorMessage = 'Nombre de usuario o contraseña incorrectos.';
     }
   }
 }
+
+
+
+
+
